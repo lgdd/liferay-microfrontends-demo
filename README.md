@@ -1,6 +1,12 @@
 # Micro Frontends in Liferay 7
 Demonstration of [Micro Frontends](https://micro-frontends.org/) in Liferay 7.1 with Angular & React.
 
+![preview](doc/preview.gif)
+
+## Requirements
+
+Liferay Portlet JS Extender must be installed. You can find CE Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115542926) and DXP Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115543020).
+
 ## Step by step
 
 Git branches will help you to follow important steps in the process of building this architecture:
