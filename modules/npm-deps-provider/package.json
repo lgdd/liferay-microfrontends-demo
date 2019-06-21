@@ -1,0 +1,28 @@
+{
+	"name": "npm-deps-provider",
+	"version": "1.0.0",
+	"description": "npm dependencies provider",
+	"devDependencies": {
+		"liferay-npm-bundler": "^2.6.2",
+		"liferay-npm-build-support": "^2.6.2"
+	},
+	"dependencies": {
+		"@angular/animations": "^6.0.3",
+		"@angular/common": "^6.0.3",
+		"@angular/compiler": "^6.0.3",
+		"@angular/core": "^6.0.3",
+		"@angular/forms": "^6.0.3",
+		"@angular/http": "^6.0.3",
+		"@angular/platform-browser": "^6.0.3",
+		"@angular/platform-browser-dynamic": "^6.0.3",
+		"@angular/router": "^6.0.3",
+		"core-js": "^2.5.4",
+		"rxjs": "^6.0.0",
+		"zone.js": "^0.8.26"
+	},
+	"scripts": {
+		"build": "npm run copy-assets && liferay-npm-bundler",
+		"copy-assets": "lnbs-copy-assets",
+		"deploy": "npm run build && lnbs-deploy"
+	}
+}

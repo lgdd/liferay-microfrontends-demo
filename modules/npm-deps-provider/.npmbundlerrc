@@ -1,0 +1,10 @@
+{
+	"create-jar": {
+		"output-dir": "dist",
+		"features": {
+			"js-extender": false,
+			"web-context": "/npm-deps-provider"
+		}		
+	},
+	"dump-report": true
+}
