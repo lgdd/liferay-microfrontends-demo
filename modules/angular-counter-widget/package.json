@@ -1,0 +1,62 @@
+{
+  "name": "angular-counter-widget",
+  "version": "1.0.0",
+  "description": "Angular Counter Widget",
+  "devDependencies": {
+    "liferay-npm-bundler": "^2.6.2",
+    "liferay-npm-build-support": "^2.6.2",
+    "copy-webpack-plugin": "^4.5.4",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.0.0",
+    "webpack-dev-server": "^3.0.0",
+    "@angular-devkit/build-angular": "~0.6.8",
+    "@angular/cli": "~6.0.8",
+    "@angular/compiler-cli": "^6.0.3",
+    "@angular/language-service": "^6.0.3",
+    "@types/jasmine": "2.8.9",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~1.7.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.0",
+    "karma-jasmine": "~1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.3.0",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.9.2",
+    "ts-loader": "^5.0.0"
+  },
+  "dependencies": {
+    "@angular/animations": "^6.0.3",
+    "@angular/common": "^6.0.3",
+    "@angular/compiler": "^6.0.3",
+    "@angular/core": "^6.0.3",
+    "@angular/forms": "^6.0.3",
+    "@angular/http": "^6.0.3",
+    "@angular/platform-browser": "^6.0.3",
+    "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/router": "^6.0.3",
+    "core-js": "^2.5.4",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-assets && liferay-npm-bundler",
+    "copy-assets": "lnbs-copy-assets",
+    "deploy": "npm run build && lnbs-deploy",
+    "start": "lnbs-start"
+  },
+  "portlet": {
+    "com.liferay.portlet.display-category": "category.sample",
+    "com.liferay.portlet.header-portlet-css": "/css/styles.css",
+    "com.liferay.portlet.instanceable": true,
+    "javax.portlet.name": "angular_counter_widget",
+    "javax.portlet.security-role-ref": "power-user,user",
+    "javax.portlet.display-name": "Angular Counter Widget"
+  },
+  "main": "index.js"
+}
