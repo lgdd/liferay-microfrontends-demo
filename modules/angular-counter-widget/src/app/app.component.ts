@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 import LiferayParams from '../types/LiferayParams'
 
@@ -9,14 +9,23 @@ declare const Liferay: any;
 })
 export class AppComponent {
     params: LiferayParams;
-    counter: any;
+    counter: number;
 
     constructor() {
-        this.counter = 0;
+        let _this = this;
+        Liferay.Loader.require(['react-counting-widget@1.0.0/Counter'], function (Counter: any) {
+            _this.counter = Counter.Service.getCounter();
+        });
     }
 
     increment() {
-        this.counter = this.counter + 1;
+        let _this = this;
+        Liferay.Loader.require(['react-counting-widget@1.0.0/Counter'], function (Counter: any, counterService: any) {
+            Counter.Service.increment();
+        });
+        Liferay.Loader.require(['react-counting-widget@1.0.0/Counter'], function (Counter: any) {
+            _this.counter = Counter.Service.getCounter();
+        });
     }
 
     get configurationJSON() {

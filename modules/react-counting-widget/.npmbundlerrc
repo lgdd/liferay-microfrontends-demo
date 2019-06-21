@@ -1,0 +1,21 @@
+{
+  "create-jar": {
+    "output-dir": "dist",
+    "features": {
+      "js-extender": true,
+      "web-context": "/react-counting-widget"
+    }
+  },
+  "dump-report": true,
+  "exclude": {
+    "*": true
+  },
+  "config": {
+    "imports": {
+      "npm-deps-provider": {
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0"
+      }
+    }
+  }
+}
