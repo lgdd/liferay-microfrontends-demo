@@ -5,7 +5,9 @@ Demonstration of [Micro Frontends](https://micro-frontends.org/) in Liferay 7.1 
 
 ## Requirements
 
-`Liferay JS Portlet Extender` must be installed. You can find CE Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115542926) and DXP Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115543020).
+`Liferay JS Portlet Extender` is required and included by default in Liferay `>= 7.2`.
+
+ For prior versions, you can find CE Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115542926) and DXP Version [here](https://web.liferay.com/fr/marketplace/-/mp/application/115543020).
 
 ## Step by step
 
