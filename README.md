@@ -1,4 +1,4 @@
-# Micro Frontends in Liferay 7
+# Micro Frontends in Liferay 7.x
 Demonstration of [Micro Frontends](https://micro-frontends.org/) in Liferay 7.3 with Angular & React.
 
 ![preview](doc/preview.gif)
